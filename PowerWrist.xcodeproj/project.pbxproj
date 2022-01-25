@@ -29,6 +29,9 @@
 		E1372E29279FA49800E45BBC /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1B279FA49800E45BBC /* ObjectType.swift */; };
 		E1372E2A279FA49800E45BBC /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1C279FA49800E45BBC /* Permissions.swift */; };
 		E1372E2B279FA49800E45BBC /* HKModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1E279FA49800E45BBC /* HKModelProtocols.swift */; };
+		E1372E30279FA5FA00E45BBC /* AHKPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E2D279FA5FA00E45BBC /* AHKPermission.swift */; };
+		E1372E31279FA5FA00E45BBC /* AHKQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E2E279FA5FA00E45BBC /* AHKQueries.swift */; };
+		E1372E32279FA5FA00E45BBC /* AHKContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E2F279FA5FA00E45BBC /* AHKContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		E1372E1B279FA49800E45BBC /* ObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
 		E1372E1C279FA49800E45BBC /* Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
 		E1372E1E279FA49800E45BBC /* HKModelProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKModelProtocols.swift; sourceTree = "<group>"; };
+		E1372E2D279FA5FA00E45BBC /* AHKPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHKPermission.swift; sourceTree = "<group>"; };
+		E1372E2E279FA5FA00E45BBC /* AHKQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHKQueries.swift; sourceTree = "<group>"; };
+		E1372E2F279FA5FA00E45BBC /* AHKContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHKContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 		E1372DDE279FA47200E45BBC /* PowerWrist */ = {
 			isa = PBXGroup;
 			children = (
+				E1372E2C279FA5FA00E45BBC /* AsyncHK */,
 				E1372E0E279FA49800E45BBC /* HKService */,
 				E1372DDF279FA47200E45BBC /* PowerWristApp.swift */,
 				E1372DE1279FA47200E45BBC /* ContentView.swift */,
@@ -202,6 +209,16 @@
 				E1372E1E279FA49800E45BBC /* HKModelProtocols.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E1372E2C279FA5FA00E45BBC /* AsyncHK */ = {
+			isa = PBXGroup;
+			children = (
+				E1372E2D279FA5FA00E45BBC /* AHKPermission.swift */,
+				E1372E2E279FA5FA00E45BBC /* AHKQueries.swift */,
+				E1372E2F279FA5FA00E45BBC /* AHKContainer.swift */,
+			);
+			path = AsyncHK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,12 +355,15 @@
 				E1372E25279FA49800E45BBC /* SampleType.swift in Sources */,
 				E1372DE9279FA47300E45BBC /* Persistence.swift in Sources */,
 				E1372E20279FA49800E45BBC /* ActivitySummaryType.swift in Sources */,
+				E1372E32279FA5FA00E45BBC /* AHKContainer.swift in Sources */,
 				E1372E21279FA49800E45BBC /* QuantityType.swift in Sources */,
+				E1372E30279FA5FA00E45BBC /* AHKPermission.swift in Sources */,
 				E1372E27279FA49800E45BBC /* WorkoutType.swift in Sources */,
 				E1372E2B279FA49800E45BBC /* HKModelProtocols.swift in Sources */,
 				E1372DEC279FA47300E45BBC /* PowerWrist.xcdatamodeld in Sources */,
 				E1372E28279FA49800E45BBC /* CorrelationType.swift in Sources */,
 				E1372E2A279FA49800E45BBC /* Permissions.swift in Sources */,
+				E1372E31279FA5FA00E45BBC /* AHKQueries.swift in Sources */,
 				E1372DE2279FA47200E45BBC /* ContentView.swift in Sources */,
 				E1372E26279FA49800E45BBC /* DocumentType.swift in Sources */,
 				E1372E24279FA49800E45BBC /* ElectrocardiogramType.swift in Sources */,
