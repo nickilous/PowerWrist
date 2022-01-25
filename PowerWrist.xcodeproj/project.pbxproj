@@ -16,6 +16,19 @@
 		E1372DF6279FA47300E45BBC /* PowerWristTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372DF5279FA47300E45BBC /* PowerWristTests.swift */; };
 		E1372E00279FA47300E45BBC /* PowerWristUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372DFF279FA47300E45BBC /* PowerWristUITests.swift */; };
 		E1372E02279FA47300E45BBC /* PowerWristUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E01279FA47300E45BBC /* PowerWristUITestsLaunchTests.swift */; };
+		E1372E1F279FA49800E45BBC /* CharacteristicType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E10279FA49800E45BBC /* CharacteristicType.swift */; };
+		E1372E20279FA49800E45BBC /* ActivitySummaryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E11279FA49800E45BBC /* ActivitySummaryType.swift */; };
+		E1372E21279FA49800E45BBC /* QuantityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E13279FA49800E45BBC /* QuantityType.swift */; };
+		E1372E22279FA49800E45BBC /* CategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E14279FA49800E45BBC /* CategoryType.swift */; };
+		E1372E23279FA49800E45BBC /* SeriesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E15279FA49800E45BBC /* SeriesType.swift */; };
+		E1372E24279FA49800E45BBC /* ElectrocardiogramType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E16279FA49800E45BBC /* ElectrocardiogramType.swift */; };
+		E1372E25279FA49800E45BBC /* SampleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E17279FA49800E45BBC /* SampleType.swift */; };
+		E1372E26279FA49800E45BBC /* DocumentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E18279FA49800E45BBC /* DocumentType.swift */; };
+		E1372E27279FA49800E45BBC /* WorkoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E19279FA49800E45BBC /* WorkoutType.swift */; };
+		E1372E28279FA49800E45BBC /* CorrelationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1A279FA49800E45BBC /* CorrelationType.swift */; };
+		E1372E29279FA49800E45BBC /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1B279FA49800E45BBC /* ObjectType.swift */; };
+		E1372E2A279FA49800E45BBC /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1C279FA49800E45BBC /* Permissions.swift */; };
+		E1372E2B279FA49800E45BBC /* HKModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1E279FA49800E45BBC /* HKModelProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +61,19 @@
 		E1372DFB279FA47300E45BBC /* PowerWristUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerWristUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1372DFF279FA47300E45BBC /* PowerWristUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerWristUITests.swift; sourceTree = "<group>"; };
 		E1372E01279FA47300E45BBC /* PowerWristUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerWristUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1372E10279FA49800E45BBC /* CharacteristicType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacteristicType.swift; sourceTree = "<group>"; };
+		E1372E11279FA49800E45BBC /* ActivitySummaryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitySummaryType.swift; sourceTree = "<group>"; };
+		E1372E13279FA49800E45BBC /* QuantityType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuantityType.swift; sourceTree = "<group>"; };
+		E1372E14279FA49800E45BBC /* CategoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryType.swift; sourceTree = "<group>"; };
+		E1372E15279FA49800E45BBC /* SeriesType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesType.swift; sourceTree = "<group>"; };
+		E1372E16279FA49800E45BBC /* ElectrocardiogramType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectrocardiogramType.swift; sourceTree = "<group>"; };
+		E1372E17279FA49800E45BBC /* SampleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleType.swift; sourceTree = "<group>"; };
+		E1372E18279FA49800E45BBC /* DocumentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentType.swift; sourceTree = "<group>"; };
+		E1372E19279FA49800E45BBC /* WorkoutType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutType.swift; sourceTree = "<group>"; };
+		E1372E1A279FA49800E45BBC /* CorrelationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrelationType.swift; sourceTree = "<group>"; };
+		E1372E1B279FA49800E45BBC /* ObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
+		E1372E1C279FA49800E45BBC /* Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		E1372E1E279FA49800E45BBC /* HKModelProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKModelProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +124,7 @@
 		E1372DDE279FA47200E45BBC /* PowerWrist */ = {
 			isa = PBXGroup;
 			children = (
+				E1372E0E279FA49800E45BBC /* HKService */,
 				E1372DDF279FA47200E45BBC /* PowerWristApp.swift */,
 				E1372DE1279FA47200E45BBC /* ContentView.swift */,
 				E1372DE3279FA47300E45BBC /* Assets.xcassets */,
@@ -131,6 +158,50 @@
 				E1372E01279FA47300E45BBC /* PowerWristUITestsLaunchTests.swift */,
 			);
 			path = PowerWristUITests;
+			sourceTree = "<group>";
+		};
+		E1372E0E279FA49800E45BBC /* HKService */ = {
+			isa = PBXGroup;
+			children = (
+				E1372E0F279FA49800E45BBC /* Types */,
+				E1372E1C279FA49800E45BBC /* Permissions.swift */,
+				E1372E1D279FA49800E45BBC /* Models */,
+			);
+			path = HKService;
+			sourceTree = "<group>";
+		};
+		E1372E0F279FA49800E45BBC /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				E1372E10279FA49800E45BBC /* CharacteristicType.swift */,
+				E1372E11279FA49800E45BBC /* ActivitySummaryType.swift */,
+				E1372E12279FA49800E45BBC /* Sample */,
+				E1372E1B279FA49800E45BBC /* ObjectType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		E1372E12279FA49800E45BBC /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				E1372E13279FA49800E45BBC /* QuantityType.swift */,
+				E1372E14279FA49800E45BBC /* CategoryType.swift */,
+				E1372E15279FA49800E45BBC /* SeriesType.swift */,
+				E1372E16279FA49800E45BBC /* ElectrocardiogramType.swift */,
+				E1372E17279FA49800E45BBC /* SampleType.swift */,
+				E1372E18279FA49800E45BBC /* DocumentType.swift */,
+				E1372E19279FA49800E45BBC /* WorkoutType.swift */,
+				E1372E1A279FA49800E45BBC /* CorrelationType.swift */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		E1372E1D279FA49800E45BBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1372E1E279FA49800E45BBC /* HKModelProtocols.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +334,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1372E29279FA49800E45BBC /* ObjectType.swift in Sources */,
+				E1372E25279FA49800E45BBC /* SampleType.swift in Sources */,
 				E1372DE9279FA47300E45BBC /* Persistence.swift in Sources */,
+				E1372E20279FA49800E45BBC /* ActivitySummaryType.swift in Sources */,
+				E1372E21279FA49800E45BBC /* QuantityType.swift in Sources */,
+				E1372E27279FA49800E45BBC /* WorkoutType.swift in Sources */,
+				E1372E2B279FA49800E45BBC /* HKModelProtocols.swift in Sources */,
 				E1372DEC279FA47300E45BBC /* PowerWrist.xcdatamodeld in Sources */,
+				E1372E28279FA49800E45BBC /* CorrelationType.swift in Sources */,
+				E1372E2A279FA49800E45BBC /* Permissions.swift in Sources */,
 				E1372DE2279FA47200E45BBC /* ContentView.swift in Sources */,
+				E1372E26279FA49800E45BBC /* DocumentType.swift in Sources */,
+				E1372E24279FA49800E45BBC /* ElectrocardiogramType.swift in Sources */,
+				E1372E22279FA49800E45BBC /* CategoryType.swift in Sources */,
+				E1372E23279FA49800E45BBC /* SeriesType.swift in Sources */,
+				E1372E1F279FA49800E45BBC /* CharacteristicType.swift in Sources */,
 				E1372DE0279FA47200E45BBC /* PowerWristApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
