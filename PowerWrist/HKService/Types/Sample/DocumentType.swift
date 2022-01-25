@@ -15,10 +15,14 @@ public enum DocumentType: Int, CaseIterable, SampleType {
     case cda
 
     public var identifier: String? {
-        return original?.identifier
+        return hkobject?.identifier
     }
     
-    public var original: HKObjectType? {
+    public var sampleType: HKSampleType? {
+        return hkobject as? HKSampleType
+    }
+    
+    public var hkobject: HKObjectType? {
         switch self {
         case .cda:
             if #available(iOS 10.0, *) {

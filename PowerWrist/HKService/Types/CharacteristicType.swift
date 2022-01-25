@@ -19,7 +19,7 @@ public enum CharacteristicType: Int, CaseIterable, ObjectType {
     case wheelchairUse
     case activityMoveMode
 
-    public var original: HKObjectType? {
+    public var hkobject: HKObjectType? {
         switch self {
         case .fitzpatrickSkinType:
             return  HKObjectType.characteristicType(forIdentifier: .fitzpatrickSkinType)

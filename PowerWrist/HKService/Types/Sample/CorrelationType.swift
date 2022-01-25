@@ -16,15 +16,17 @@ public enum CorrelationType: Int, CaseIterable, SampleType {
     case food
 
     public var identifier: String? {
-        return original?.identifier
+        return hkobject?.identifier
     }
-
-    public var original: HKObjectType? {
+    public var hkobject: HKObjectType? {
+        return sampleType
+    }
+    public var sampleType: HKSampleType? {
         switch self {
         case .food:
-            return HKObjectType.correlationType(forIdentifier: .food)
+            return HKSampleType.correlationType(forIdentifier: .food)
         case .bloodPressure:
-            return HKObjectType.correlationType(forIdentifier: .bloodPressure)
+            return HKSampleType.correlationType(forIdentifier: .bloodPressure)
         }
     }
 }

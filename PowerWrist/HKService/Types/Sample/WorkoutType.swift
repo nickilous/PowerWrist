@@ -15,13 +15,15 @@ public enum WorkoutType: Int, CaseIterable, SampleType {
     case workoutType
 
     public var identifier: String? {
-        return original?.identifier
+        return hkobject?.identifier
     }
-
-    public var original: HKObjectType? {
+    public var hkobject: HKObjectType? {
+        return sampleType
+    }
+    public var sampleType: HKSampleType? {
         switch self {
         case .workoutType:
-            return HKObjectType.workoutType()
+            return HKSampleType.workoutType()
         }
     }
 }

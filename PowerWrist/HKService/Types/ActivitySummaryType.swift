@@ -14,7 +14,7 @@ import HealthKit
 public enum ActivitySummaryType: Int, CaseIterable, ObjectType {
     case activitySummaryType
 
-    public var original: HKObjectType? {
+    public var hkobject: HKObjectType? {
         switch self {
         case .activitySummaryType:
             if #available(iOS 9.3, *) {

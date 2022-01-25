@@ -16,10 +16,12 @@ public enum SeriesType: Int, CaseIterable, SampleType {
     case workoutRoute
 
     public var identifier: String? {
-        return original?.identifier
+        return hkobject?.identifier
     }
-    
-    public var original: HKObjectType? {
+    public var sampleType: HKSampleType? {
+        return hkobject as? HKSampleType
+    }
+    public var hkobject: HKObjectType? {
         switch self {
         case .heartbeatSeries:
             if #available(iOS 13.0, *) {

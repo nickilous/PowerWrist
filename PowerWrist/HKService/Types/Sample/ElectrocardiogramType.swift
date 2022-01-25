@@ -16,10 +16,12 @@ public enum ElectrocardiogramType: Int, CaseIterable, SampleType {
     case electrocardiogramType
 
     public var identifier: String? {
-        return original?.identifier
+        return hkobject?.identifier
     }
-
-    public var original: HKObjectType? {
+    public var sampleType: HKSampleType? {
+        return hkobject as? HKSampleType
+    }
+    public var hkobject: HKObjectType? {
         switch self {
         case .electrocardiogramType:
             return HKObjectType.electrocardiogramType()

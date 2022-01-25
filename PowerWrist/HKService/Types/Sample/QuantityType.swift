@@ -104,276 +104,279 @@ public enum QuantityType: Int, CaseIterable, SampleType {
     case uvExposure
 
     public var identifier: String? {
-        return original?.identifier
+        return hkobject?.identifier
     }
-
-    public var original: HKObjectType? {
+    
+    public var hkobject: HKObjectType? {
+        sampleType
+    }
+    public var sampleType: HKSampleType? {
         switch self {
         case .heartRateVariabilitySDNN:
             if #available(iOS 11.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .heartRateVariabilitySDNN)
+                return HKSampleType.quantityType(forIdentifier: .heartRateVariabilitySDNN)
             } else {
                 return nil
             }
         case .bodyMassIndex:
-            return HKObjectType.quantityType(forIdentifier: .bodyMassIndex)
+            return HKSampleType.quantityType(forIdentifier: .bodyMassIndex)
         case .bodyFatPercentage:
-            return HKObjectType.quantityType(forIdentifier: .bodyFatPercentage)
+            return HKSampleType.quantityType(forIdentifier: .bodyFatPercentage)
         case .heartRate:
-            return HKObjectType.quantityType(forIdentifier: .heartRate)
+            return HKSampleType.quantityType(forIdentifier: .heartRate)
         case .respiratoryRate:
-            return HKObjectType.quantityType(forIdentifier: .respiratoryRate)
+            return HKSampleType.quantityType(forIdentifier: .respiratoryRate)
         case .oxygenSaturation:
-            return HKObjectType.quantityType(forIdentifier: .oxygenSaturation)
+            return HKSampleType.quantityType(forIdentifier: .oxygenSaturation)
         case .bodyTemperature:
-            return HKObjectType.quantityType(forIdentifier: .bodyTemperature)
+            return HKSampleType.quantityType(forIdentifier: .bodyTemperature)
         case .basalBodyTemperature:
-            return HKObjectType.quantityType(forIdentifier: .basalBodyTemperature)
+            return HKSampleType.quantityType(forIdentifier: .basalBodyTemperature)
         case .bloodPressureSystolic:
-            return HKObjectType.quantityType(forIdentifier: .bloodPressureSystolic)
+            return HKSampleType.quantityType(forIdentifier: .bloodPressureSystolic)
         case .bloodPressureDiastolic:
-            return HKObjectType.quantityType(forIdentifier: .bloodPressureDiastolic)
+            return HKSampleType.quantityType(forIdentifier: .bloodPressureDiastolic)
         case .bloodGlucose:
-            return HKObjectType.quantityType(forIdentifier: .bloodGlucose)
+            return HKSampleType.quantityType(forIdentifier: .bloodGlucose)
         case .height:
-            return HKObjectType.quantityType(forIdentifier: .height)
+            return HKSampleType.quantityType(forIdentifier: .height)
         case .bodyMass:
-            return HKObjectType.quantityType(forIdentifier: .bodyMass)
+            return HKSampleType.quantityType(forIdentifier: .bodyMass)
         case .restingHeartRate:
             if #available(iOS 11.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .restingHeartRate)
+                return HKSampleType.quantityType(forIdentifier: .restingHeartRate)
             } else {
                 return nil
             }
         case .vo2Max:
             if #available(iOS 11.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .vo2Max)
+                return HKSampleType.quantityType(forIdentifier: .vo2Max)
             } else {
                 return nil
             }
         case .waistCircumference:
             if #available(iOS 11.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .waistCircumference)
+                return HKSampleType.quantityType(forIdentifier: .waistCircumference)
             } else {
                 return nil
             }
         case .stepCount:
-            return HKObjectType.quantityType(forIdentifier: .stepCount)
+            return HKSampleType.quantityType(forIdentifier: .stepCount)
         case .distanceSwimming:
             if #available(iOS 10.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .distanceSwimming)
+                return HKSampleType.quantityType(forIdentifier: .distanceSwimming)
             } else {
                 return nil
             }
         case .distanceWalkingRunning:
-            return HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning)
+            return HKSampleType.quantityType(forIdentifier: .distanceWalkingRunning)
         case .distanceCycling:
-            return HKObjectType.quantityType(forIdentifier: .distanceCycling)
+            return HKSampleType.quantityType(forIdentifier: .distanceCycling)
         case .basalEnergyBurned:
-            return HKObjectType.quantityType(forIdentifier: .basalEnergyBurned)
+            return HKSampleType.quantityType(forIdentifier: .basalEnergyBurned)
         case .activeEnergyBurned:
-            return HKObjectType.quantityType(forIdentifier: .activeEnergyBurned)
+            return HKSampleType.quantityType(forIdentifier: .activeEnergyBurned)
         case .flightsClimbed:
-            return HKObjectType.quantityType(forIdentifier: .flightsClimbed)
+            return HKSampleType.quantityType(forIdentifier: .flightsClimbed)
         case .appleExerciseTime:
             if #available(iOS 9.3, *) {
-                return HKObjectType.quantityType(forIdentifier: .appleExerciseTime)
+                return HKSampleType.quantityType(forIdentifier: .appleExerciseTime)
             } else {
                 return nil
             }
         case .dietaryEnergyConsumed:
-            return HKObjectType.quantityType(forIdentifier: .dietaryEnergyConsumed)
+            return HKSampleType.quantityType(forIdentifier: .dietaryEnergyConsumed)
         case .dietaryCarbohydrates:
-            return HKObjectType.quantityType(forIdentifier: .dietaryCarbohydrates)
+            return HKSampleType.quantityType(forIdentifier: .dietaryCarbohydrates)
         case .dietaryFiber:
-            return HKObjectType.quantityType(forIdentifier: .dietaryFiber)
+            return HKSampleType.quantityType(forIdentifier: .dietaryFiber)
         case .dietarySugar:
-            return HKObjectType.quantityType(forIdentifier: .dietarySugar)
+            return HKSampleType.quantityType(forIdentifier: .dietarySugar)
         case .dietaryFatTotal:
-            return HKObjectType.quantityType(forIdentifier: .dietaryFatTotal)
+            return HKSampleType.quantityType(forIdentifier: .dietaryFatTotal)
         case .dietaryFatSaturated:
-            return HKObjectType.quantityType(forIdentifier: .dietaryFatSaturated)
+            return HKSampleType.quantityType(forIdentifier: .dietaryFatSaturated)
         case .dietaryProtein:
-            return HKObjectType.quantityType(forIdentifier: .dietaryProtein)
+            return HKSampleType.quantityType(forIdentifier: .dietaryProtein)
         case .dietaryVitaminA:
-            return HKObjectType.quantityType(forIdentifier: .dietaryVitaminA)
+            return HKSampleType.quantityType(forIdentifier: .dietaryVitaminA)
         case .dietaryThiamin:
-            return HKObjectType.quantityType(forIdentifier: .dietaryThiamin)
+            return HKSampleType.quantityType(forIdentifier: .dietaryThiamin)
         case .dietaryRiboflavin:
-            return HKObjectType.quantityType(forIdentifier: .dietaryRiboflavin)
+            return HKSampleType.quantityType(forIdentifier: .dietaryRiboflavin)
         case .dietaryNiacin:
-            return HKObjectType.quantityType(forIdentifier: .dietaryNiacin)
+            return HKSampleType.quantityType(forIdentifier: .dietaryNiacin)
         case .dietaryPantothenicAcid:
-            return HKObjectType.quantityType(forIdentifier: .dietaryPantothenicAcid)
+            return HKSampleType.quantityType(forIdentifier: .dietaryPantothenicAcid)
         case .dietaryVitaminB6:
-            return HKObjectType.quantityType(forIdentifier: .dietaryVitaminB6)
+            return HKSampleType.quantityType(forIdentifier: .dietaryVitaminB6)
         case .dietaryVitaminB12:
-            return HKObjectType.quantityType(forIdentifier: .dietaryVitaminB12)
+            return HKSampleType.quantityType(forIdentifier: .dietaryVitaminB12)
         case .dietaryVitaminC:
-            return HKObjectType.quantityType(forIdentifier: .dietaryVitaminC)
+            return HKSampleType.quantityType(forIdentifier: .dietaryVitaminC)
         case .dietaryVitaminD:
-            return HKObjectType.quantityType(forIdentifier: .dietaryVitaminD)
+            return HKSampleType.quantityType(forIdentifier: .dietaryVitaminD)
         case .dietaryVitaminE:
-            return HKObjectType.quantityType(forIdentifier: .dietaryVitaminE)
+            return HKSampleType.quantityType(forIdentifier: .dietaryVitaminE)
         case .dietaryVitaminK:
-            return HKObjectType.quantityType(forIdentifier: .dietaryVitaminK)
+            return HKSampleType.quantityType(forIdentifier: .dietaryVitaminK)
         case .dietaryFolate:
-            return HKObjectType.quantityType(forIdentifier: .dietaryFolate)
+            return HKSampleType.quantityType(forIdentifier: .dietaryFolate)
         case .dietaryCalcium:
-            return HKObjectType.quantityType(forIdentifier: .dietaryCalcium)
+            return HKSampleType.quantityType(forIdentifier: .dietaryCalcium)
         case .dietaryIron:
-            return HKObjectType.quantityType(forIdentifier: .dietaryIron)
+            return HKSampleType.quantityType(forIdentifier: .dietaryIron)
         case .dietaryMagnesium:
-            return HKObjectType.quantityType(forIdentifier: .dietaryMagnesium)
+            return HKSampleType.quantityType(forIdentifier: .dietaryMagnesium)
         case .dietaryPhosphorus:
-            return HKObjectType.quantityType(forIdentifier: .dietaryPhosphorus)
+            return HKSampleType.quantityType(forIdentifier: .dietaryPhosphorus)
         case .dietaryPotassium:
-            return HKObjectType.quantityType(forIdentifier: .dietaryPotassium)
+            return HKSampleType.quantityType(forIdentifier: .dietaryPotassium)
         case .dietarySodium:
-            return HKObjectType.quantityType(forIdentifier: .dietarySodium)
+            return HKSampleType.quantityType(forIdentifier: .dietarySodium)
         case .dietaryZinc:
-            return HKObjectType.quantityType(forIdentifier: .dietaryZinc)
+            return HKSampleType.quantityType(forIdentifier: .dietaryZinc)
         case .dietaryIodine:
-            return HKObjectType.quantityType(forIdentifier: .dietaryIodine)
+            return HKSampleType.quantityType(forIdentifier: .dietaryIodine)
         case .dietaryManganese:
-            return HKObjectType.quantityType(forIdentifier: .dietaryManganese)
+            return HKSampleType.quantityType(forIdentifier: .dietaryManganese)
         case .dietaryWater:
-            return HKObjectType.quantityType(forIdentifier: .dietaryWater)
+            return HKSampleType.quantityType(forIdentifier: .dietaryWater)
         case .peakExpiratoryFlowRate:
-            return HKObjectType.quantityType(forIdentifier: .peakExpiratoryFlowRate)
+            return HKSampleType.quantityType(forIdentifier: .peakExpiratoryFlowRate)
         case .leanBodyMass:
-            return HKObjectType.quantityType(forIdentifier: .leanBodyMass)
+            return HKSampleType.quantityType(forIdentifier: .leanBodyMass)
         case .distanceWheelchair:
             if #available(iOS 10.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .distanceWheelchair)
+                return HKSampleType.quantityType(forIdentifier: .distanceWheelchair)
             } else {
                 return nil
             }
         case .nikeFuel:
-            return HKObjectType.quantityType(forIdentifier: .nikeFuel)
+            return HKSampleType.quantityType(forIdentifier: .nikeFuel)
         case .pushCount:
             if #available(iOS 10.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .pushCount)
+                return HKSampleType.quantityType(forIdentifier: .pushCount)
             } else {
                 return nil
             }
         case .swimmingStrokeCount:
             if #available(iOS 10.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .swimmingStrokeCount)
+                return HKSampleType.quantityType(forIdentifier: .swimmingStrokeCount)
             } else {
                 return nil
             }
         case .distanceDownhillSnowSports:
             if #available(iOS 11.2, *) {
-                return HKObjectType.quantityType(forIdentifier: .distanceDownhillSnowSports)
+                return HKSampleType.quantityType(forIdentifier: .distanceDownhillSnowSports)
             } else {
                 return nil
             }
         case .walkingHeartRateAverage:
             if #available(iOS 11.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .walkingHeartRateAverage)
+                return HKSampleType.quantityType(forIdentifier: .walkingHeartRateAverage)
             } else {
                 return nil
             }
         case .peripheralPerfusionIndex:
-            return HKObjectType.quantityType(forIdentifier: .peripheralPerfusionIndex)
+            return HKSampleType.quantityType(forIdentifier: .peripheralPerfusionIndex)
         case .numberOfTimesFallen:
-            return HKObjectType.quantityType(forIdentifier: .numberOfTimesFallen)
+            return HKSampleType.quantityType(forIdentifier: .numberOfTimesFallen)
         case .electrodermalActivity:
-            return HKObjectType.quantityType(forIdentifier: .electrodermalActivity)
+            return HKSampleType.quantityType(forIdentifier: .electrodermalActivity)
         case .inhalerUsage:
-            return HKObjectType.quantityType(forIdentifier: .inhalerUsage)
+            return HKSampleType.quantityType(forIdentifier: .inhalerUsage)
         case .insulinDelivery:
             if #available(iOS 11.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .insulinDelivery)
+                return HKSampleType.quantityType(forIdentifier: .insulinDelivery)
             } else {
                 return nil
             }
         case .bloodAlcoholContent:
-            return HKObjectType.quantityType(forIdentifier: .bloodAlcoholContent)
+            return HKSampleType.quantityType(forIdentifier: .bloodAlcoholContent)
         case .forcedVitalCapacity:
-            return HKObjectType.quantityType(forIdentifier: .forcedVitalCapacity)
+            return HKSampleType.quantityType(forIdentifier: .forcedVitalCapacity)
         case .forcedExpiratoryVolume1:
-            return HKObjectType.quantityType(forIdentifier: .forcedExpiratoryVolume1)
+            return HKSampleType.quantityType(forIdentifier: .forcedExpiratoryVolume1)
         case .dietaryFatPolyunsaturated:
-            return HKObjectType.quantityType(forIdentifier: .dietaryFatPolyunsaturated)
+            return HKSampleType.quantityType(forIdentifier: .dietaryFatPolyunsaturated)
         case .dietaryFatMonounsaturated:
-            return HKObjectType.quantityType(forIdentifier: .dietaryFatMonounsaturated)
+            return HKSampleType.quantityType(forIdentifier: .dietaryFatMonounsaturated)
         case .dietaryCholesterol:
-            return HKObjectType.quantityType(forIdentifier: .dietaryCholesterol)
+            return HKSampleType.quantityType(forIdentifier: .dietaryCholesterol)
         case .dietaryBiotin:
-            return HKObjectType.quantityType(forIdentifier: .dietaryBiotin)
+            return HKSampleType.quantityType(forIdentifier: .dietaryBiotin)
         case .dietarySelenium:
-            return HKObjectType.quantityType(forIdentifier: .dietarySelenium)
+            return HKSampleType.quantityType(forIdentifier: .dietarySelenium)
         case .dietaryCopper:
-            return HKObjectType.quantityType(forIdentifier: .dietaryCopper)
+            return HKSampleType.quantityType(forIdentifier: .dietaryCopper)
         case .dietaryChromium:
-            return HKObjectType.quantityType(forIdentifier: .dietaryChromium)
+            return HKSampleType.quantityType(forIdentifier: .dietaryChromium)
         case .dietaryMolybdenum:
-            return HKObjectType.quantityType(forIdentifier: .dietaryMolybdenum)
+            return HKSampleType.quantityType(forIdentifier: .dietaryMolybdenum)
         case .dietaryChloride:
-            return HKObjectType.quantityType(forIdentifier: .dietaryChloride)
+            return HKSampleType.quantityType(forIdentifier: .dietaryChloride)
         case .dietaryCaffeine:
-            return HKObjectType.quantityType(forIdentifier: .dietaryCaffeine)
+            return HKSampleType.quantityType(forIdentifier: .dietaryCaffeine)
         case .uvExposure:
-            return HKObjectType.quantityType(forIdentifier: .uvExposure)
+            return HKSampleType.quantityType(forIdentifier: .uvExposure)
         case .environmentalAudioExposure:
             if #available(iOS 13.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .environmentalAudioExposure)
+                return HKSampleType.quantityType(forIdentifier: .environmentalAudioExposure)
             } else {
                 return nil
             }
         case .headphoneAudioExposure:
             if #available(iOS 13.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .headphoneAudioExposure)
+                return HKSampleType.quantityType(forIdentifier: .headphoneAudioExposure)
             } else {
                 return nil
             }
         case .appleStandTime:
             if #available(iOS 13.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .appleStandTime)
+                return HKSampleType.quantityType(forIdentifier: .appleStandTime)
             } else {
                 return nil
             }
         case .walkingSpeed:
             if #available(iOS 14.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .walkingSpeed)
+                return HKSampleType.quantityType(forIdentifier: .walkingSpeed)
             } else {
                 return nil
             }
         case .walkingDoubleSupportPercentage:
             if #available(iOS 14.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .walkingDoubleSupportPercentage)
+                return HKSampleType.quantityType(forIdentifier: .walkingDoubleSupportPercentage)
             } else {
                 return nil
             }
         case .walkingAsymmetryPercentage:
             if #available(iOS 14.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .walkingAsymmetryPercentage)
+                return HKSampleType.quantityType(forIdentifier: .walkingAsymmetryPercentage)
             } else {
                 return nil
             }
         case .walkingStepLength:
             if #available(iOS 14.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .walkingStepLength)
+                return HKSampleType.quantityType(forIdentifier: .walkingStepLength)
             } else {
                 return nil
             }
         case .sixMinuteWalkTestDistance:
             if #available(iOS 14.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .sixMinuteWalkTestDistance)
+                return HKSampleType.quantityType(forIdentifier: .sixMinuteWalkTestDistance)
             } else {
                 return nil
             }
         case .stairAscentSpeed:
             if #available(iOS 14.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .stairAscentSpeed)
+                return HKSampleType.quantityType(forIdentifier: .stairAscentSpeed)
             } else {
                 return nil
             }
         case .stairDescentSpeed:
             if #available(iOS 14.0, *) {
-                return HKObjectType.quantityType(forIdentifier: .stairDescentSpeed)
+                return HKSampleType.quantityType(forIdentifier: .stairDescentSpeed)
             } else {
                 return nil
             }
