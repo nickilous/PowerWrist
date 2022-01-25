@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import HealthKit
 
 @main
 struct PowerWristApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environment(\.hkAvailability, HKHealthStore.isHealthDataAvailable())
         }
     }
 }

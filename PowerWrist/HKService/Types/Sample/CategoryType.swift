@@ -12,6 +12,7 @@ import HealthKit
  All HealthKit category types
  */
 public enum CategoryType: Int, CaseIterable, SampleType {
+    
     case sleepAnalysis
     case appleStandHour
     case cervicalMucusQuality
@@ -77,10 +78,10 @@ public enum CategoryType: Int, CaseIterable, SampleType {
     }
     
     public var hkobject: HKObjectType? {
-        return sampletype
+        return sampleType
     }
 
-    public var sampletype: HKSampleType? {
+    public var sampleType: HKSampleType? {
         switch self {
         case .sleepAnalysis:
             return HKSampleType.categoryType(forIdentifier: .sleepAnalysis)
