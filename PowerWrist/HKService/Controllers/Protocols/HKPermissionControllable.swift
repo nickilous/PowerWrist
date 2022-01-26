@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol HKPermissionControllable: HasReadPermissions, HasWritePermissions, Controllable {
+protocol HKPermissionControllable: HasReadPermissions, HasWritePermissions {
     var container: AHKPermissionContainerable { get }
     func addRead(permission: ReadPermissions)
     func addWrite(permission: WritePermissions)
