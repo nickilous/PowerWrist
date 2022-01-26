@@ -25,10 +25,17 @@ class HKPermissionState: ObservableObject, HKPermissionControllable {
     func addWrite(permission: WritePermissions) {
         self.writePermissions.append(permission)
     }
-    
+    func addRead(permissions: [ReadPermissions]) {
+        for permission in permissions {
+            self.readPermissions.append(permission)
+        }
+    }
+    func addWrite(permissions: [WritePermissions]) {
+        for permission in permissions {
+            self.writePermissions.append(permission)
+        }
+    }
     func checkPermissions() async throws {
         try await self.container.permissions(forSharing: writePermissions, forReading: readPermissions)
     }
-    
-    
 }
