@@ -18,26 +18,7 @@ protocol HasWritePermissions {
     var writePermissions: [WritePermissions] { get set }
 }
 
-enum ReadPermissions {
-    case quantity(QuantityType)
-    case category(CategoryType)
-    case series(SeriesType)
-    case electroCardioGram(ElectrocardiogramType)
-    case document(DocumentType)
-    case workout(WorkoutType)
-    case correlation(CorrelationType)
-    case characteristic(CharacteristicType)
-    case activitySummary(ActivitySummaryType)
-}
-enum WritePermissions {
-    case quantity(QuantityType)
-    case category(CategoryType)
-    case series(SeriesType)
-    case electroCardioGram(ElectrocardiogramType)
-    case document(DocumentType)
-    case workout(WorkoutType)
-    case correlation(CorrelationType)
-}
+
 
 protocol HKPermissionContainerable {
     func requestAuthorization(toShare: Set<HKSampleType>?, read: Set<HKObjectType>?, completion: @escaping (Bool, Error?) -> Void)

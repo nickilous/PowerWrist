@@ -8,8 +8,10 @@
 import Foundation
 
 
-class CharacteristicState: ObservableObject {
+class HKCharacteristicState: ObservableObject {
     var container: HKCharacteristicContainerable
+    
+    var readPermissions: [ReadPermissions] = [.characteristic(.biologicalSex), .characteristic(.dateOfBirth)]
     
     @Published var characteristics: CharacteristicModel
     
