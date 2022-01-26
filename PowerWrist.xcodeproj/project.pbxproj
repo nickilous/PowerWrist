@@ -27,7 +27,7 @@
 		E1372E27279FA49800E45BBC /* WorkoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E19279FA49800E45BBC /* WorkoutType.swift */; };
 		E1372E28279FA49800E45BBC /* CorrelationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1A279FA49800E45BBC /* CorrelationType.swift */; };
 		E1372E29279FA49800E45BBC /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1B279FA49800E45BBC /* ObjectType.swift */; };
-		E1372E2A279FA49800E45BBC /* HKPermissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1C279FA49800E45BBC /* HKPermissable.swift */; };
+		E1372E2A279FA49800E45BBC /* HKPermissionContainerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1C279FA49800E45BBC /* HKPermissionContainerable.swift */; };
 		E1372E2B279FA49800E45BBC /* HKModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1E279FA49800E45BBC /* HKModelProtocols.swift */; };
 		E1372E30279FA5FA00E45BBC /* AHKPermissionContainerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E2D279FA5FA00E45BBC /* AHKPermissionContainerable.swift */; };
 		E1372E31279FA5FA00E45BBC /* AHKQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E2E279FA5FA00E45BBC /* AHKQueries.swift */; };
@@ -39,7 +39,7 @@
 		E1372E4127A071D500E45BBC /* Controllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E4027A071D500E45BBC /* Controllable.swift */; };
 		E1372E4A27A0C00000E45BBC /* HKEnvironmentKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E4927A0C00000E45BBC /* HKEnvironmentKeys.swift */; };
 		E1372E4C27A0C62800E45BBC /* CharacteristicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E4B27A0C62800E45BBC /* CharacteristicModel.swift */; };
-		E1372E4E27A0C7C100E45BBC /* HKCharacteristicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E4D27A0C7C100E45BBC /* HKCharacteristicable.swift */; };
+		E1372E4E27A0C7C100E45BBC /* HKCharacteristicContainerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E4D27A0C7C100E45BBC /* HKCharacteristicContainerable.swift */; };
 		E1372E5127A0CB0A00E45BBC /* HKBiologicalSexExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E5027A0CB0A00E45BBC /* HKBiologicalSexExt.swift */; };
 		E1372E5427A0CBED00E45BBC /* CharacteristicState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E5327A0CBED00E45BBC /* CharacteristicState.swift */; };
 /* End PBXBuildFile section */
@@ -85,7 +85,7 @@
 		E1372E19279FA49800E45BBC /* WorkoutType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutType.swift; sourceTree = "<group>"; };
 		E1372E1A279FA49800E45BBC /* CorrelationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrelationType.swift; sourceTree = "<group>"; };
 		E1372E1B279FA49800E45BBC /* ObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
-		E1372E1C279FA49800E45BBC /* HKPermissable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKPermissable.swift; sourceTree = "<group>"; };
+		E1372E1C279FA49800E45BBC /* HKPermissionContainerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKPermissionContainerable.swift; sourceTree = "<group>"; };
 		E1372E1E279FA49800E45BBC /* HKModelProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKModelProtocols.swift; sourceTree = "<group>"; };
 		E1372E2D279FA5FA00E45BBC /* AHKPermissionContainerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHKPermissionContainerable.swift; sourceTree = "<group>"; };
 		E1372E2E279FA5FA00E45BBC /* AHKQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHKQueries.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		E1372E4027A071D500E45BBC /* Controllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controllable.swift; sourceTree = "<group>"; };
 		E1372E4927A0C00000E45BBC /* HKEnvironmentKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKEnvironmentKeys.swift; sourceTree = "<group>"; };
 		E1372E4B27A0C62800E45BBC /* CharacteristicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicModel.swift; sourceTree = "<group>"; };
-		E1372E4D27A0C7C100E45BBC /* HKCharacteristicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKCharacteristicable.swift; sourceTree = "<group>"; };
+		E1372E4D27A0C7C100E45BBC /* HKCharacteristicContainerable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKCharacteristicContainerable.swift; sourceTree = "<group>"; };
 		E1372E5027A0CB0A00E45BBC /* HKBiologicalSexExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKBiologicalSexExt.swift; sourceTree = "<group>"; };
 		E1372E5327A0CBED00E45BBC /* CharacteristicState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacteristicState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -284,9 +284,9 @@
 			children = (
 				E1372E3527A060AD00E45BBC /* HKAvailability.swift */,
 				E1372E3727A0662200E45BBC /* HKContainerable.swift */,
-				E1372E1C279FA49800E45BBC /* HKPermissable.swift */,
+				E1372E1C279FA49800E45BBC /* HKPermissionContainerable.swift */,
 				E1372E1E279FA49800E45BBC /* HKModelProtocols.swift */,
-				E1372E4D27A0C7C100E45BBC /* HKCharacteristicable.swift */,
+				E1372E4D27A0C7C100E45BBC /* HKCharacteristicContainerable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -479,7 +479,7 @@
 				E1372DEC279FA47300E45BBC /* PowerWrist.xcdatamodeld in Sources */,
 				E1372E28279FA49800E45BBC /* CorrelationType.swift in Sources */,
 				E1372E5127A0CB0A00E45BBC /* HKBiologicalSexExt.swift in Sources */,
-				E1372E2A279FA49800E45BBC /* HKPermissable.swift in Sources */,
+				E1372E2A279FA49800E45BBC /* HKPermissionContainerable.swift in Sources */,
 				E1372E31279FA5FA00E45BBC /* AHKQueries.swift in Sources */,
 				E1372DE2279FA47200E45BBC /* ContentView.swift in Sources */,
 				E1372E3D27A06DB800E45BBC /* AHKPermissionControllable.swift in Sources */,
@@ -488,7 +488,7 @@
 				E1372E22279FA49800E45BBC /* CategoryType.swift in Sources */,
 				E1372E23279FA49800E45BBC /* SeriesType.swift in Sources */,
 				E1372E1F279FA49800E45BBC /* CharacteristicType.swift in Sources */,
-				E1372E4E27A0C7C100E45BBC /* HKCharacteristicable.swift in Sources */,
+				E1372E4E27A0C7C100E45BBC /* HKCharacteristicContainerable.swift in Sources */,
 				E1372E4A27A0C00000E45BBC /* HKEnvironmentKeys.swift in Sources */,
 				E1372DE0279FA47200E45BBC /* PowerWristApp.swift in Sources */,
 			);

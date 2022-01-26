@@ -10,7 +10,7 @@ import HealthKit
 
 extension HKHealthStore: AHKPermissionContainerable {}
 
-protocol AHKPermissionContainerable: HKPermissable, AHKContainerable {}
+protocol AHKPermissionContainerable: HKPermissionContainerable, AHKContainerable {}
 
 
 extension AHKPermissionContainerable {
