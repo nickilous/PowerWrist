@@ -8,7 +8,7 @@
 import Foundation
 import HealthKit
 
-protocol AHKPermissionControllable: HasReadPermissions, HasWritePermissions, Controllable {
+protocol AHKPermissionControllable: HasReadPermissions, HasWritePermissions {
     var container: AHKPermissionContainerable { get }
     func addRead(permission: ReadPermissions)
     func addWrite(permission: WritePermissions)

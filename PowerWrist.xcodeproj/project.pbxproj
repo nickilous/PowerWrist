@@ -45,6 +45,7 @@
 		E1372E5727A0D40E00E45BBC /* HKPermissionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E5627A0D40E00E45BBC /* HKPermissionState.swift */; };
 		E1372E5927A0D43E00E45BBC /* HKPermissionControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E5827A0D43E00E45BBC /* HKPermissionControllable.swift */; };
 		E1372E5F27A0D65A00E45BBC /* HKPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E5E27A0D65A00E45BBC /* HKPermissions.swift */; };
+		E1372E6127A0D73100E45BBC /* HKCharacteristicControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E6027A0D73100E45BBC /* HKCharacteristicControllable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		E1372E5627A0D40E00E45BBC /* HKPermissionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKPermissionState.swift; sourceTree = "<group>"; };
 		E1372E5827A0D43E00E45BBC /* HKPermissionControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKPermissionControllable.swift; sourceTree = "<group>"; };
 		E1372E5E27A0D65A00E45BBC /* HKPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKPermissions.swift; sourceTree = "<group>"; };
+		E1372E6027A0D73100E45BBC /* HKCharacteristicControllable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKCharacteristicControllable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				E1372E5827A0D43E00E45BBC /* HKPermissionControllable.swift */,
+				E1372E6027A0D73100E45BBC /* HKCharacteristicControllable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -528,6 +531,7 @@
 				E1372E3D27A06DB800E45BBC /* AHKPermissionControllable.swift in Sources */,
 				E1372E5927A0D43E00E45BBC /* HKPermissionControllable.swift in Sources */,
 				E1372E26279FA49800E45BBC /* DocumentType.swift in Sources */,
+				E1372E6127A0D73100E45BBC /* HKCharacteristicControllable.swift in Sources */,
 				E1372E24279FA49800E45BBC /* ElectrocardiogramType.swift in Sources */,
 				E1372E22279FA49800E45BBC /* CategoryType.swift in Sources */,
 				E1372E23279FA49800E45BBC /* SeriesType.swift in Sources */,

@@ -6,11 +6,9 @@
 //
 
 import Foundation
+import Combine
+class HKPermissionState: ObservableObject, HKPermissionControllable {
 
-class AHKPermissionState: ObservableObject, HKPermission {
-    var action: PassthroughSubject<PermissionStateAction, Never> = .init()
-    var subscriptions: Set<AnyCancellable> = .init()
-    
     var readPermissions: [ReadPermissions] = []
     var writePermissions: [WritePermissions] = []
     

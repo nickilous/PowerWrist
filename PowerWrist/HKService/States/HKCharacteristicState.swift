@@ -8,7 +8,7 @@
 import Foundation
 
 
-class HKCharacteristicState: ObservableObject {
+class HKCharacteristicState: ObservableObject, HKCharacteristicControllable {
     var container: HKCharacteristicContainerable
     
     var readPermissions: [ReadPermissions] = [.characteristic(.biologicalSex), .characteristic(.dateOfBirth)]
