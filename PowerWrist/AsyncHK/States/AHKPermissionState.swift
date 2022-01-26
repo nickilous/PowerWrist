@@ -12,12 +12,10 @@ import Combine
 enum PermissionStateAction {
     case checkPermissions
 }
-extension HKHealthStore {
-    
-}
 
 
-class AHKPermissionState: AHKPermissionControllable {
+
+class AHKPermissionState: ObservableObject, AHKPermissionControllable {
     var action: PassthroughSubject<PermissionStateAction, Never> = .init()
     var subscriptions: Set<AnyCancellable> = .init()
     
