@@ -9,14 +9,26 @@ import Foundation
 import SwiftUI
 
 
-struct HKAvailabilityEnvironmentKey: EnvironmentKey {
-    static let defaultValue: HKAvailability = .unavailable
+struct AvailabilityError: Error {
+    enum ErrorCode {
+        case storeUnavailable
+    }
+    
+    var error: ErrorCode
+    
+    init(error: ErrorCode) {
+        self.error = error
+    }
+}
+
+struct AvailabilityEnvironmentKey: EnvironmentKey {
+    static let defaultValue: Availability = .unavailable(AvailabilityError(error: .storeUnavailable))
 }
 
 
 extension EnvironmentValues {
-    var hkAvailability: HKAvailability {
-        get { self[HKAvailabilityEnvironmentKey.self] }
-        set { self[HKAvailabilityEnvironmentKey.self] = newValue }
+    var availability: Availability {
+        get { self[AvailabilityEnvironmentKey.self] }
+        set { self[AvailabilityEnvironmentKey.self] = newValue }
     }
 }

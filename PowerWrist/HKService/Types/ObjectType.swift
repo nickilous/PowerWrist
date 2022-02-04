@@ -21,3 +21,4 @@ extension ObjectType {
 protocol ReadPermissable {
     var readPermission: HKObjectType? { get }
 }
+

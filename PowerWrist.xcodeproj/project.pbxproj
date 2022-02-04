@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E100D24427A856F3004BFE63 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D24327A856F3004BFE63 /* SettingsView.swift */; };
+		E100D28927A867D4004BFE63 /* WorkoutState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D28827A867D4004BFE63 /* WorkoutState.swift */; };
+		E100D29227A8E3F8004BFE63 /* HKDayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D29127A8E3F8004BFE63 /* HKDayState.swift */; };
+		E100D29427A8E516004BFE63 /* HKWorkoutExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D29327A8E516004BFE63 /* HKWorkoutExt.swift */; };
+		E100D29727A8E594004BFE63 /* StartOfDayRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D29627A8E594004BFE63 /* StartOfDayRepresentable.swift */; };
+		E100D29927A8ED3D004BFE63 /* CanCheckAvailability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D29827A8ED3D004BFE63 /* CanCheckAvailability.swift */; };
+		E100D29B27A8F2A6004BFE63 /* HasAStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D29A27A8F2A6004BFE63 /* HasAStore.swift */; };
+		E100D29D27A8F2DB004BFE63 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D29C27A8F2DB004BFE63 /* Container.swift */; };
+		E100D29F27A8F521004BFE63 /* HasReadPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D29E27A8F521004BFE63 /* HasReadPermissions.swift */; };
+		E100D2A127A8F59E004BFE63 /* HasWritePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D2A027A8F59E004BFE63 /* HasWritePermissions.swift */; };
+		E100D2A727AD9A96004BFE63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E100D2A627AD9A96004BFE63 /* Assets.xcassets */; };
+		E100D2AD27AD9A96004BFE63 /* PowerWristWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E100D2AC27AD9A96004BFE63 /* PowerWristWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E100D2B227AD9A96004BFE63 /* PowerWristApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D2B127AD9A96004BFE63 /* PowerWristApp.swift */; };
+		E100D2B427AD9A97004BFE63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D2B327AD9A97004BFE63 /* ContentView.swift */; };
+		E100D2B627AD9A97004BFE63 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D2B527AD9A97004BFE63 /* NotificationController.swift */; };
+		E100D2B827AD9A97004BFE63 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D2B727AD9A97004BFE63 /* NotificationView.swift */; };
+		E100D2BA27AD9A97004BFE63 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D2B927AD9A97004BFE63 /* ComplicationController.swift */; };
+		E100D2BC27AD9A97004BFE63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E100D2BB27AD9A97004BFE63 /* Assets.xcassets */; };
+		E100D2BF27AD9A97004BFE63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E100D2BE27AD9A97004BFE63 /* Preview Assets.xcassets */; };
+		E100D2CB27AD9A97004BFE63 /* PowerWristWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D2CA27AD9A97004BFE63 /* PowerWristWatchTests.swift */; };
+		E100D2D527AD9A97004BFE63 /* PowerWristWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D2D427AD9A97004BFE63 /* PowerWristWatchUITests.swift */; };
+		E100D2D727AD9A97004BFE63 /* PowerWristWatchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D2D627AD9A97004BFE63 /* PowerWristWatchUITestsLaunchTests.swift */; };
+		E100D2DA27AD9A97004BFE63 /* PowerWristWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E100D2A427AD9A96004BFE63 /* PowerWristWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E100D32E27ADC4D0004BFE63 /* SettingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E100D32D27ADC4D0004BFE63 /* SettingsState.swift */; };
 		E1372DE0279FA47200E45BBC /* PowerWristApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372DDF279FA47200E45BBC /* PowerWristApp.swift */; };
 		E1372DE2279FA47200E45BBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372DE1279FA47200E45BBC /* ContentView.swift */; };
 		E1372DE4279FA47300E45BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1372DE3279FA47300E45BBC /* Assets.xcassets */; };
@@ -28,7 +52,6 @@
 		E1372E28279FA49800E45BBC /* CorrelationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1A279FA49800E45BBC /* CorrelationType.swift */; };
 		E1372E29279FA49800E45BBC /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1B279FA49800E45BBC /* ObjectType.swift */; };
 		E1372E2A279FA49800E45BBC /* HKPermissionContainerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1C279FA49800E45BBC /* HKPermissionContainerable.swift */; };
-		E1372E2B279FA49800E45BBC /* HKModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E1E279FA49800E45BBC /* HKModelProtocols.swift */; };
 		E1372E30279FA5FA00E45BBC /* AHKPermissionContainerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E2D279FA5FA00E45BBC /* AHKPermissionContainerable.swift */; };
 		E1372E31279FA5FA00E45BBC /* AHKQueries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E2E279FA5FA00E45BBC /* AHKQueries.swift */; };
 		E1372E32279FA5FA00E45BBC /* AHKContainerable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E2F279FA5FA00E45BBC /* AHKContainerable.swift */; };
@@ -50,6 +73,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E100D2AE27AD9A96004BFE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1372DD4279FA47200E45BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E100D2AB27AD9A96004BFE63;
+			remoteInfo = "PowerWristWatch WatchKit Extension";
+		};
+		E100D2C727AD9A97004BFE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1372DD4279FA47200E45BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E100D2AB27AD9A96004BFE63;
+			remoteInfo = "PowerWristWatch WatchKit Extension";
+		};
+		E100D2D127AD9A97004BFE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1372DD4279FA47200E45BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E100D2A327AD9A96004BFE63;
+			remoteInfo = PowerWristWatch;
+		};
+		E100D2D827AD9A97004BFE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1372DD4279FA47200E45BBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E100D2A327AD9A96004BFE63;
+			remoteInfo = PowerWristWatch;
+		};
 		E1372DF2279FA47300E45BBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E1372DD4279FA47200E45BBC /* Project object */;
@@ -66,7 +117,60 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E100D2DE27AD9A97004BFE63 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E100D2AD27AD9A96004BFE63 /* PowerWristWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E100D2E227AD9A97004BFE63 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E100D2DA27AD9A97004BFE63 /* PowerWristWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E100D24327A856F3004BFE63 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E100D28827A867D4004BFE63 /* WorkoutState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutState.swift; sourceTree = "<group>"; };
+		E100D29127A8E3F8004BFE63 /* HKDayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKDayState.swift; sourceTree = "<group>"; };
+		E100D29327A8E516004BFE63 /* HKWorkoutExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKWorkoutExt.swift; sourceTree = "<group>"; };
+		E100D29627A8E594004BFE63 /* StartOfDayRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartOfDayRepresentable.swift; sourceTree = "<group>"; };
+		E100D29827A8ED3D004BFE63 /* CanCheckAvailability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanCheckAvailability.swift; sourceTree = "<group>"; };
+		E100D29A27A8F2A6004BFE63 /* HasAStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasAStore.swift; sourceTree = "<group>"; };
+		E100D29C27A8F2DB004BFE63 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		E100D29E27A8F521004BFE63 /* HasReadPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasReadPermissions.swift; sourceTree = "<group>"; };
+		E100D2A027A8F59E004BFE63 /* HasWritePermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasWritePermissions.swift; sourceTree = "<group>"; };
+		E100D2A427AD9A96004BFE63 /* PowerWristWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerWristWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E100D2A627AD9A96004BFE63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E100D2AC27AD9A96004BFE63 /* PowerWristWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PowerWristWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E100D2B127AD9A96004BFE63 /* PowerWristApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerWristApp.swift; sourceTree = "<group>"; };
+		E100D2B327AD9A97004BFE63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E100D2B527AD9A97004BFE63 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E100D2B727AD9A97004BFE63 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		E100D2B927AD9A97004BFE63 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E100D2BB27AD9A97004BFE63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E100D2BE27AD9A97004BFE63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E100D2C027AD9A97004BFE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E100D2C127AD9A97004BFE63 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E100D2C627AD9A97004BFE63 /* PowerWristWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerWristWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E100D2CA27AD9A97004BFE63 /* PowerWristWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerWristWatchTests.swift; sourceTree = "<group>"; };
+		E100D2D027AD9A97004BFE63 /* PowerWristWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerWristWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E100D2D427AD9A97004BFE63 /* PowerWristWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerWristWatchUITests.swift; sourceTree = "<group>"; };
+		E100D2D627AD9A97004BFE63 /* PowerWristWatchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerWristWatchUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E100D32D27ADC4D0004BFE63 /* SettingsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsState.swift; sourceTree = "<group>"; };
 		E1372DDC279FA47200E45BBC /* PowerWrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerWrist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1372DDF279FA47200E45BBC /* PowerWristApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerWristApp.swift; sourceTree = "<group>"; };
 		E1372DE1279FA47200E45BBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,7 +195,6 @@
 		E1372E1A279FA49800E45BBC /* CorrelationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrelationType.swift; sourceTree = "<group>"; };
 		E1372E1B279FA49800E45BBC /* ObjectType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
 		E1372E1C279FA49800E45BBC /* HKPermissionContainerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKPermissionContainerable.swift; sourceTree = "<group>"; };
-		E1372E1E279FA49800E45BBC /* HKModelProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKModelProtocols.swift; sourceTree = "<group>"; };
 		E1372E2D279FA5FA00E45BBC /* AHKPermissionContainerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHKPermissionContainerable.swift; sourceTree = "<group>"; };
 		E1372E2E279FA5FA00E45BBC /* AHKQueries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHKQueries.swift; sourceTree = "<group>"; };
 		E1372E2F279FA5FA00E45BBC /* AHKContainerable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHKContainerable.swift; sourceTree = "<group>"; };
@@ -114,6 +217,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E100D2A927AD9A96004BFE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E100D2C327AD9A97004BFE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E100D2CD27AD9A97004BFE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1372DD9279FA47200E45BBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,12 +263,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E100D2A527AD9A96004BFE63 /* PowerWristWatch */ = {
+			isa = PBXGroup;
+			children = (
+				E100D2A627AD9A96004BFE63 /* Assets.xcassets */,
+			);
+			path = PowerWristWatch;
+			sourceTree = "<group>";
+		};
+		E100D2B027AD9A96004BFE63 /* PowerWristWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E100D2B127AD9A96004BFE63 /* PowerWristApp.swift */,
+				E100D2B327AD9A97004BFE63 /* ContentView.swift */,
+				E100D2B527AD9A97004BFE63 /* NotificationController.swift */,
+				E100D2B727AD9A97004BFE63 /* NotificationView.swift */,
+				E100D2B927AD9A97004BFE63 /* ComplicationController.swift */,
+				E100D2BB27AD9A97004BFE63 /* Assets.xcassets */,
+				E100D2C027AD9A97004BFE63 /* Info.plist */,
+				E100D2C127AD9A97004BFE63 /* PushNotificationPayload.apns */,
+				E100D2BD27AD9A97004BFE63 /* Preview Content */,
+			);
+			path = "PowerWristWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E100D2BD27AD9A97004BFE63 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E100D2BE27AD9A97004BFE63 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E100D2C927AD9A97004BFE63 /* PowerWristWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				E100D2CA27AD9A97004BFE63 /* PowerWristWatchTests.swift */,
+			);
+			path = PowerWristWatchTests;
+			sourceTree = "<group>";
+		};
+		E100D2D327AD9A97004BFE63 /* PowerWristWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E100D2D427AD9A97004BFE63 /* PowerWristWatchUITests.swift */,
+				E100D2D627AD9A97004BFE63 /* PowerWristWatchUITestsLaunchTests.swift */,
+			);
+			path = PowerWristWatchUITests;
+			sourceTree = "<group>";
+		};
 		E1372DD3279FA47200E45BBC = {
 			isa = PBXGroup;
 			children = (
 				E1372DDE279FA47200E45BBC /* PowerWrist */,
 				E1372DF4279FA47300E45BBC /* PowerWristTests */,
 				E1372DFE279FA47300E45BBC /* PowerWristUITests */,
+				E100D2A527AD9A96004BFE63 /* PowerWristWatch */,
+				E100D2B027AD9A96004BFE63 /* PowerWristWatch WatchKit Extension */,
+				E100D2C927AD9A97004BFE63 /* PowerWristWatchTests */,
+				E100D2D327AD9A97004BFE63 /* PowerWristWatchUITests */,
 				E1372DDD279FA47200E45BBC /* Products */,
 				E1372E6327A0E05500E45BBC /* Frameworks */,
 			);
@@ -156,6 +333,10 @@
 				E1372DDC279FA47200E45BBC /* PowerWrist.app */,
 				E1372DF1279FA47300E45BBC /* PowerWristTests.xctest */,
 				E1372DFB279FA47300E45BBC /* PowerWristUITests.xctest */,
+				E100D2A427AD9A96004BFE63 /* PowerWristWatch.app */,
+				E100D2AC27AD9A96004BFE63 /* PowerWristWatch WatchKit Extension.appex */,
+				E100D2C627AD9A97004BFE63 /* PowerWristWatchTests.xctest */,
+				E100D2D027AD9A97004BFE63 /* PowerWristWatchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +349,7 @@
 				E1372E2C279FA5FA00E45BBC /* AsyncHK */,
 				E1372E0E279FA49800E45BBC /* HKService */,
 				E1372DDF279FA47200E45BBC /* PowerWristApp.swift */,
+				E100D24327A856F3004BFE63 /* SettingsView.swift */,
 				E1372DE1279FA47200E45BBC /* ContentView.swift */,
 				E1372DE3279FA47300E45BBC /* Assets.xcassets */,
 				E1372DE8279FA47300E45BBC /* Persistence.swift */,
@@ -300,7 +482,11 @@
 		E1372E4427A0806000E45BBC /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E1372E1E279FA49800E45BBC /* HKModelProtocols.swift */,
+				E100D29627A8E594004BFE63 /* StartOfDayRepresentable.swift */,
+				E100D29827A8ED3D004BFE63 /* CanCheckAvailability.swift */,
+				E100D29A27A8F2A6004BFE63 /* HasAStore.swift */,
+				E100D29E27A8F521004BFE63 /* HasReadPermissions.swift */,
+				E100D2A027A8F59E004BFE63 /* HasWritePermissions.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -325,6 +511,7 @@
 			isa = PBXGroup;
 			children = (
 				E1372E5027A0CB0A00E45BBC /* HKBiologicalSexExt.swift */,
+				E100D29327A8E516004BFE63 /* HKWorkoutExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -334,6 +521,9 @@
 			children = (
 				E1372E5327A0CBED00E45BBC /* HKCharacteristicState.swift */,
 				E1372E5627A0D40E00E45BBC /* HKPermissionState.swift */,
+				E100D28827A867D4004BFE63 /* WorkoutState.swift */,
+				E100D29127A8E3F8004BFE63 /* HKDayState.swift */,
+				E100D32D27ADC4D0004BFE63 /* SettingsState.swift */,
 			);
 			path = States;
 			sourceTree = "<group>";
@@ -350,6 +540,7 @@
 			isa = PBXGroup;
 			children = (
 				E1372E5B27A0D5D100E45BBC /* Protocols */,
+				E100D29C27A8F2DB004BFE63 /* Container.swift */,
 			);
 			path = Containers;
 			sourceTree = "<group>";
@@ -392,6 +583,76 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E100D2A327AD9A96004BFE63 /* PowerWristWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E100D2DF27AD9A97004BFE63 /* Build configuration list for PBXNativeTarget "PowerWristWatch" */;
+			buildPhases = (
+				E100D2A227AD9A96004BFE63 /* Resources */,
+				E100D2DE27AD9A97004BFE63 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E100D2AF27AD9A96004BFE63 /* PBXTargetDependency */,
+			);
+			name = PowerWristWatch;
+			productName = PowerWristWatch;
+			productReference = E100D2A427AD9A96004BFE63 /* PowerWristWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E100D2AB27AD9A96004BFE63 /* PowerWristWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E100D2DB27AD9A97004BFE63 /* Build configuration list for PBXNativeTarget "PowerWristWatch WatchKit Extension" */;
+			buildPhases = (
+				E100D2A827AD9A96004BFE63 /* Sources */,
+				E100D2A927AD9A96004BFE63 /* Frameworks */,
+				E100D2AA27AD9A96004BFE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PowerWristWatch WatchKit Extension";
+			productName = "PowerWristWatch WatchKit Extension";
+			productReference = E100D2AC27AD9A96004BFE63 /* PowerWristWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		E100D2C527AD9A97004BFE63 /* PowerWristWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E100D2E327AD9A97004BFE63 /* Build configuration list for PBXNativeTarget "PowerWristWatchTests" */;
+			buildPhases = (
+				E100D2C227AD9A97004BFE63 /* Sources */,
+				E100D2C327AD9A97004BFE63 /* Frameworks */,
+				E100D2C427AD9A97004BFE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E100D2C827AD9A97004BFE63 /* PBXTargetDependency */,
+			);
+			name = PowerWristWatchTests;
+			productName = PowerWristWatchTests;
+			productReference = E100D2C627AD9A97004BFE63 /* PowerWristWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E100D2CF27AD9A97004BFE63 /* PowerWristWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E100D2E627AD9A97004BFE63 /* Build configuration list for PBXNativeTarget "PowerWristWatchUITests" */;
+			buildPhases = (
+				E100D2CC27AD9A97004BFE63 /* Sources */,
+				E100D2CD27AD9A97004BFE63 /* Frameworks */,
+				E100D2CE27AD9A97004BFE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E100D2D227AD9A97004BFE63 /* PBXTargetDependency */,
+			);
+			name = PowerWristWatchUITests;
+			productName = PowerWristWatchUITests;
+			productReference = E100D2D027AD9A97004BFE63 /* PowerWristWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		E1372DDB279FA47200E45BBC /* PowerWrist */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1372E05279FA47300E45BBC /* Build configuration list for PBXNativeTarget "PowerWrist" */;
@@ -399,10 +660,12 @@
 				E1372DD8279FA47200E45BBC /* Sources */,
 				E1372DD9279FA47200E45BBC /* Frameworks */,
 				E1372DDA279FA47200E45BBC /* Resources */,
+				E100D2E227AD9A97004BFE63 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E100D2D927AD9A97004BFE63 /* PBXTargetDependency */,
 			);
 			name = PowerWrist;
 			productName = PowerWrist;
@@ -455,6 +718,20 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					E100D2A327AD9A96004BFE63 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					E100D2AB27AD9A96004BFE63 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					E100D2C527AD9A97004BFE63 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E100D2AB27AD9A96004BFE63;
+					};
+					E100D2CF27AD9A97004BFE63 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E100D2A327AD9A96004BFE63;
+					};
 					E1372DDB279FA47200E45BBC = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -484,11 +761,46 @@
 				E1372DDB279FA47200E45BBC /* PowerWrist */,
 				E1372DF0279FA47300E45BBC /* PowerWristTests */,
 				E1372DFA279FA47300E45BBC /* PowerWristUITests */,
+				E100D2A327AD9A96004BFE63 /* PowerWristWatch */,
+				E100D2AB27AD9A96004BFE63 /* PowerWristWatch WatchKit Extension */,
+				E100D2C527AD9A97004BFE63 /* PowerWristWatchTests */,
+				E100D2CF27AD9A97004BFE63 /* PowerWristWatchUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E100D2A227AD9A96004BFE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E100D2A727AD9A96004BFE63 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E100D2AA27AD9A96004BFE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E100D2BF27AD9A97004BFE63 /* Preview Assets.xcassets in Resources */,
+				E100D2BC27AD9A97004BFE63 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E100D2C427AD9A97004BFE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E100D2CE27AD9A97004BFE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1372DDA279FA47200E45BBC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -515,36 +827,75 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E100D2A827AD9A96004BFE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E100D2B627AD9A97004BFE63 /* NotificationController.swift in Sources */,
+				E100D2B427AD9A97004BFE63 /* ContentView.swift in Sources */,
+				E100D2BA27AD9A97004BFE63 /* ComplicationController.swift in Sources */,
+				E100D2B227AD9A96004BFE63 /* PowerWristApp.swift in Sources */,
+				E100D2B827AD9A97004BFE63 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E100D2C227AD9A97004BFE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E100D2CB27AD9A97004BFE63 /* PowerWristWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E100D2CC27AD9A97004BFE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E100D2D727AD9A97004BFE63 /* PowerWristWatchUITestsLaunchTests.swift in Sources */,
+				E100D2D527AD9A97004BFE63 /* PowerWristWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1372DD8279FA47200E45BBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E100D32E27ADC4D0004BFE63 /* SettingsState.swift in Sources */,
+				E100D29427A8E516004BFE63 /* HKWorkoutExt.swift in Sources */,
+				E100D29227A8E3F8004BFE63 /* HKDayState.swift in Sources */,
 				E1372E3627A060AD00E45BBC /* HKAvailability.swift in Sources */,
 				E1372E4127A071D500E45BBC /* Controllable.swift in Sources */,
+				E100D29B27A8F2A6004BFE63 /* HasAStore.swift in Sources */,
 				E1372E29279FA49800E45BBC /* ObjectType.swift in Sources */,
 				E1372E25279FA49800E45BBC /* SampleType.swift in Sources */,
 				E1372DE9279FA47300E45BBC /* Persistence.swift in Sources */,
+				E100D24427A856F3004BFE63 /* SettingsView.swift in Sources */,
 				E1372E20279FA49800E45BBC /* ActivitySummaryType.swift in Sources */,
 				E1372E32279FA5FA00E45BBC /* AHKContainerable.swift in Sources */,
 				E1372E5F27A0D65A00E45BBC /* HKPermissions.swift in Sources */,
 				E1372E21279FA49800E45BBC /* QuantityType.swift in Sources */,
+				E100D28927A867D4004BFE63 /* WorkoutState.swift in Sources */,
 				E1372E30279FA5FA00E45BBC /* AHKPermissionContainerable.swift in Sources */,
 				E1372E4C27A0C62800E45BBC /* CharacteristicModel.swift in Sources */,
 				E1372E27279FA49800E45BBC /* WorkoutType.swift in Sources */,
+				E100D29927A8ED3D004BFE63 /* CanCheckAvailability.swift in Sources */,
 				E1372E5727A0D40E00E45BBC /* HKPermissionState.swift in Sources */,
 				E1372E3827A0662200E45BBC /* HKContainerable.swift in Sources */,
 				E1372E5427A0CBED00E45BBC /* HKCharacteristicState.swift in Sources */,
 				E1372E3B27A068EB00E45BBC /* AHKPermissionState.swift in Sources */,
-				E1372E2B279FA49800E45BBC /* HKModelProtocols.swift in Sources */,
 				E1372DEC279FA47300E45BBC /* PowerWrist.xcdatamodeld in Sources */,
 				E1372E28279FA49800E45BBC /* CorrelationType.swift in Sources */,
 				E1372E5127A0CB0A00E45BBC /* HKBiologicalSexExt.swift in Sources */,
 				E1372E2A279FA49800E45BBC /* HKPermissionContainerable.swift in Sources */,
 				E1372E31279FA5FA00E45BBC /* AHKQueries.swift in Sources */,
+				E100D29F27A8F521004BFE63 /* HasReadPermissions.swift in Sources */,
 				E1372DE2279FA47200E45BBC /* ContentView.swift in Sources */,
 				E1372E3D27A06DB800E45BBC /* AHKPermissionControllable.swift in Sources */,
 				E1372E5927A0D43E00E45BBC /* HKPermissionControllable.swift in Sources */,
+				E100D29727A8E594004BFE63 /* StartOfDayRepresentable.swift in Sources */,
 				E1372E26279FA49800E45BBC /* DocumentType.swift in Sources */,
+				E100D29D27A8F2DB004BFE63 /* Container.swift in Sources */,
+				E100D2A127A8F59E004BFE63 /* HasWritePermissions.swift in Sources */,
 				E1372E6127A0D73100E45BBC /* HKCharacteristicControllable.swift in Sources */,
 				E1372E24279FA49800E45BBC /* ElectrocardiogramType.swift in Sources */,
 				E1372E22279FA49800E45BBC /* CategoryType.swift in Sources */,
@@ -576,6 +927,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E100D2AF27AD9A96004BFE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E100D2AB27AD9A96004BFE63 /* PowerWristWatch WatchKit Extension */;
+			targetProxy = E100D2AE27AD9A96004BFE63 /* PBXContainerItemProxy */;
+		};
+		E100D2C827AD9A97004BFE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E100D2AB27AD9A96004BFE63 /* PowerWristWatch WatchKit Extension */;
+			targetProxy = E100D2C727AD9A97004BFE63 /* PBXContainerItemProxy */;
+		};
+		E100D2D227AD9A97004BFE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E100D2A327AD9A96004BFE63 /* PowerWristWatch */;
+			targetProxy = E100D2D127AD9A97004BFE63 /* PBXContainerItemProxy */;
+		};
+		E100D2D927AD9A97004BFE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E100D2A327AD9A96004BFE63 /* PowerWristWatch */;
+			targetProxy = E100D2D827AD9A97004BFE63 /* PBXContainerItemProxy */;
+		};
 		E1372DF3279FA47300E45BBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E1372DDB279FA47200E45BBC /* PowerWrist */;
@@ -589,6 +960,200 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		E100D2DC27AD9A97004BFE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PowerWristWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = C2DCC2XTSE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PowerWristWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PowerWristWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thedevbox.com.PowerWrist.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		E100D2DD27AD9A97004BFE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PowerWristWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = C2DCC2XTSE;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PowerWristWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PowerWristWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thedevbox.com.PowerWrist.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		E100D2E027AD9A97004BFE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2DCC2XTSE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = PowerWristWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = PowerWristWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.thedevbox.com.PowerWrist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thedevbox.com.PowerWrist.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		E100D2E127AD9A97004BFE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2DCC2XTSE;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = PowerWristWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = PowerWristWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.thedevbox.com.PowerWrist;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thedevbox.com.PowerWrist.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		E100D2E427AD9A97004BFE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2DCC2XTSE;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thedevbox.com.PowerWrist.PowerWristWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PowerWristWatch WatchKit Extension.appex/PowerWristWatch WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		E100D2E527AD9A97004BFE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2DCC2XTSE;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thedevbox.com.PowerWrist.PowerWristWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PowerWristWatch WatchKit Extension.appex/PowerWristWatch WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		E100D2E727AD9A97004BFE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2DCC2XTSE;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thedevbox.com.PowerWrist.PowerWristWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = PowerWristWatch;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		E100D2E827AD9A97004BFE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2DCC2XTSE;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thedevbox.com.PowerWrist.PowerWristWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = PowerWristWatch;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
 		E1372E03279FA47300E45BBC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -848,6 +1413,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E100D2DB27AD9A97004BFE63 /* Build configuration list for PBXNativeTarget "PowerWristWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E100D2DC27AD9A97004BFE63 /* Debug */,
+				E100D2DD27AD9A97004BFE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E100D2DF27AD9A97004BFE63 /* Build configuration list for PBXNativeTarget "PowerWristWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E100D2E027AD9A97004BFE63 /* Debug */,
+				E100D2E127AD9A97004BFE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E100D2E327AD9A97004BFE63 /* Build configuration list for PBXNativeTarget "PowerWristWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E100D2E427AD9A97004BFE63 /* Debug */,
+				E100D2E527AD9A97004BFE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E100D2E627AD9A97004BFE63 /* Build configuration list for PBXNativeTarget "PowerWristWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E100D2E727AD9A97004BFE63 /* Debug */,
+				E100D2E827AD9A97004BFE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E1372DD7279FA47200E45BBC /* Build configuration list for PBXProject "PowerWrist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

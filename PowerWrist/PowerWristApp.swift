@@ -10,10 +10,26 @@ import HealthKit
 
 @main
 struct PowerWristApp: App {
-
+    @StateObject var permissionState: HKPermissionState = .init(container: HKHealthStore())
+    @StateObject var characteristicState: HKCharacteristicState = .init(container: HKHealthStore())
     var body: some Scene {
         WindowGroup {
-            ContentView().environment(\.hkAvailability, HKHealthStore.isHealthDataAvailable())
+            ContentView()
+                
+                .environmentObject(permissionState)
+                .environmentObject(characteristicState)
+                .task {
+                    permissionState.addRead(permissions: characteristicState.readPermissions)
+                    permissionState.addRead(permission: .quantity(.height))
+                    do {
+                        try await permissionState.checkPermissions()
+                    } catch  {
+                        print(error)
+                    }
+                }
+            
         }
     }
 }
+
+extension HKHealthStore: ObservableObject {}
